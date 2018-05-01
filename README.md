@@ -1,4 +1,7 @@
+我的博客=================>www.wrpotter.com
+
 # HexoTool version 1.0
+
 1. 初次使用,需要输入blog根目录,以便后续操作.    
 
    ![Snipaste_2018-04-30_22-34-39](img/Snipaste_2018-04-30_22-34-39.png)
