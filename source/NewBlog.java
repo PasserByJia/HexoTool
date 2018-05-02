@@ -46,10 +46,14 @@ public class NewBlog extends JFrame {
             String cmd = "powershell.exe (cd "+blogPath
             		+" );(hexo new "+content
             		+" );("+blogPath+"\\source\\_posts\\"+content+".md)";
-            System.out.println(content);
-            System.out.println(cmd);
             try{
-               Runtime.getRuntime().exec(cmd);
+               File filename = new File(blogPath+"\\source\\_posts\\"+content+".md");
+               if(!filename.exists()) {
+            	   Runtime.getRuntime().exec(cmd);
+            	   prg.setText("");
+               }else {
+            	   Runtime.getRuntime().exec("powershell.exe "+blogPath+"\\source\\_posts\\"+content+".md");
+               }
             }
            catch(Exception e){
                 e.printStackTrace();
@@ -62,10 +66,7 @@ public class NewBlog extends JFrame {
     		this.blogPath =blogPath;
     	}
     	public void actionPerformed(ActionEvent arg0) {
-            String content = prg.getText();
             String cmd = "cmd.exe /k cd /d "+blogPath + "&& hexo clean && start hexo g -d";
-            System.out.println(content);
-            System.out.println(cmd);
             try{
               Runtime.getRuntime().exec(cmd);
             }
