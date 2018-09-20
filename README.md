@@ -1,6 +1,6 @@
 我的博客=================>www.wrpotter.com
 ## 强烈推荐使用 hexo+hexo-admin 一键安装脚本
-项目地址:https://github.com/PasserByJia/HexoOneClickInstallation
+项目地址:https://github.com/PasserByJia/HexoOneClickInstallation  
 脚本详情：http://www.wrpotter.com/2018/09/13/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BAhexo-hexo-admin%E8%84%9A%E6%9C%AC/
 
 ## HexoTool version 1.1                                                2018-5-2
